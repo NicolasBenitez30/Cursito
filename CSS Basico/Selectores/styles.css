@@ -1,0 +1,18 @@
+p { /* Modificacion todos los objetos P */
+    color: purple;
+}
+li { /* Modificacion todos los Objetos Li, seleccion por objeto. */
+    color: grey;
+}
+
+h1 {
+    color: brown;
+}
+
+.faltante { /* Para identificar una clase es importante ver que tiene un punto al inicio. El nombre de la clase tiene que tener sentido con el estilo que le doy. Seleccion por Clase */
+    color: red;
+}
+
+#ingrediente-secreto {
+    color: black;
+}

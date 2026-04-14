@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularios</title>
+</head>
+<body>
+    <form action=""> <!--Etiqueta Formulario, un conjunto de campos-->
+        <input type="text" required> <!--Etiqueta de Dato Tipo Texto. Atributo REQUIRED: Obligatorio en español (lo dice el nombre, tenes que completar el campo con su formato para enviar el formulario) y es un atributo de funcionalidad-->
+        <input type="text" required minlength="3"> <!--Atributo Required MINLENGTH: Requiere un minimo de caracteres pasar ser enviado-->
+        <input type="color" value="nombre_color"> <!--Tipo Color. Atributo VALUE: lo que va a recibir el Servidor, guarda informacion en el nombre de value, en este caso "nombre_color" -->
+        <input type="email" name="Correo Electronico"> <!--Tipo Correo Electronico: Te pide que pongas un @. Atributo NAME: Identificar un Imput, en este caso se indentifica un correo, pero el de texto puede ser un nombre, apellido, etc. y es un atributo de configuracion interna (para darle identidad)-->
+        <input type="password" placeholder="Contraseña"> <!--Tipo Contraseña. Atributo PLACEHOLDER: Texto que se ultiliza para dar un ejemplo del imput, en este caso: Escribe tu contraseña o Constraseña o Password. Al escribir Desaparece. -->
+        <input type="checkbox"> <!--Tipo Confirmacion Ejemplo el tilde de aceptar terminos & condiciones-->
+        <input type="radio"> <!--Tipo Radio: Elegir una opcion entre varias de input radio -->
+        <input type="file"> <!--Tipo Archivo: Seleccion de Archivo-->
+        <input type="date"> <!--Tipo Fecha: Seleccionas una fecha Ejemplo: dia de nacimiento-->
+        <input type="submit" value=""> <!--Tipo Enviar-->
+    </form>
+</body>
+</html>
