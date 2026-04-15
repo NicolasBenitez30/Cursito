@@ -1,0 +1,12 @@
+p {
+    color: red; /* Atributo COLOR: Define el Color del texto. Siempre terminar con ; porque no le da validacion al contenido. */
+    font-family: Montserrat; /* Atributo FONT-FAMILY: Define la fuente en la que se vera el texto. Cuando la tipografia tiene mas de una palabra utilizar las '' (comillas simples) en los extremos, porque nos tira un error. Tambien podes agregar mas fuentes por si no las toma el navegador (por las dudas), siempre agregando una , (coma) despues de cada fuente. */
+    font-size: 13px; /* Atributo FONT-SIZE: define el tamaño del texto. */
+    font-weight: 700; /* Atributo FONT-WEIGHT: Define el Grosor del Texto. Bolder: agranda el grosor un escalon mas. */
+    font-style: italic; /* Atributo FONT-STYLE: Define el estilo del texto. Valor Italic: texto inclinado. Valor Oblique: texto ligeramente inclinado. */
+    text-align: justify; /* Atributo TEXT-ALIGN: Alinea texto dentro de su contenedor. Valor JUSTIFY: alinea texto uniformemente entre margenes. Valor START: Alinea el Texto donde comenzamos a escribir (Izquierda a Derecha) y el Valor END hace lo mismo pero al reves. ; */
+    text-decoration: line-through; /* Atributo TEXT-DECORATION: Pone una linea en el texto, puede ser sobre (overline) o Abajo (underline) o Tachando (line-through) el texto. Tambien podes utilizarlas a la vez. */
+    line-height: 1.5; /* Atributo LINE-HEIGHT: Define el espacio que hay entre renglones o lineas de texto. */
+    letter-spacing: 5px; /* Atributo LETTER-SPACING: Define el espacio entre letras en el texto. */
+    text-transform: lowercase; /* Atributo TEXT-TRANSFORM: Transforma todo el texto segun el valor. Valor Uppercase: Todo el texto en mayuscula. Valor Capitalize: Transforma en la primera letra de cada palabra en Mayuscula */
+}
