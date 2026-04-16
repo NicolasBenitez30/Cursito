@@ -1,0 +1,15 @@
+div {
+    background: red;
+    width: 200px;
+    margin: auto;
+    text-align:center;
+}
+
+div {
+    border: 4px solid black; /* Atributo BORDER: Se utiliza para remplazar los otros tres atributos, B-WIDTH, B-STYLE y B-COLOR. Tambien podemos definir los bordes de los costado, B-TOP y los tres atributos, B-RIGHT y lo mismo, B-BOTTOM Y B-LEFT, lo mismo, por si se quiere modificar cada uno.
+    border-width: 5px;  Atributo BORDER-WIDTH: Asignas el tamaño del borde segun el valor señalizado. 
+    border-color: black;  Atributo BODRDER-COLOR: Color del borde. 
+    border-style: solid;  Atributo BORDER-STYLE: Define el Estilo del objeto, tiene varios valores, el mas comun es SOLID, muestra un borde natural. */
+    border-radius: 4px; /*  Atributo BORDER-RADIUS: Se utiliza para Redondear los bordes del objeto. Dependiendo de que valor utilices el objeto se redondea de una manera, si utilizamos px (pixeles) se redondea las esquinas y si utilizamos % (porcentaje) se redonda todo. Tambien se puede utilizar como se utiliza el atributo PADDING con dos valores pero funciona en las diagonales, lo mismo con los 4 valores. */
+
+}

@@ -1,0 +1,14 @@
+div {
+    background-color: red; /* Atributo BACKGROUND-COLOR: Segun el valor cambia el fondo de color del objeto que se modifica. */
+    width: 200px; /* Atributo WIDTH: Segun el valor determina el ancho del objeto a modificar. */
+    height: 200px; /* Atributo HEIGHT: Segun el valor determina el alto del objeto. */
+}
+
+input {
+    width: 90%; /* Define el ancho dentro de un objeto en % (porcentaje), esto se suele utilizar para que se ajuste a diferentes pantallas, ejemplo los celulares, tablets, etc. */
+    box-sizing: border-box; /* Como el boton tiene otra propiedad, este atributo hace que el imput toque los bordes */ 
+}
+
+form {
+    width: 300px;
+}

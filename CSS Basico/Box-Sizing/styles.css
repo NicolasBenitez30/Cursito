@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px
+}
+
+.box-default {
+    box-sizing: content-box;
+    padding: 25px;
+    border: 10px solid black;
+}
+
+.box-new {
+    box-sizing: border-box; /* Atributo BOX-SIZING: define como se calcula el tamaño total de un elemento, determinando si el relleno y los bordes se incluyen en esas medidas o se suman. Valor BORDER-BOX: ajusta el border, el padding y el contenido para que mida los valores que le asignamos. */
+    padding: 25px;
+    border: 10px solid black;
+}

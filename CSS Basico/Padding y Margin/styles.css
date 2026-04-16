@@ -1,0 +1,24 @@
+.formulario { /* Cuando queremos modificar una clase, es necesario poner un . (punto) al inicio de la clase a modificar */
+    background-color: red;
+    padding: 20px 0 30px 40px; /* Esta es otra manera para definir la separacion del borde sin hacer todas las lineas de codigo hechas abajo, manera mas simple. El orden es el mismo que el de abajo, como las agujas del reloj.
+    padding-top: 20px;  Atributo PADDING-TOP: Separa el contenido de el borde de Arriba.  
+    padding-right: 20px;  Atributo PADDING-RIGHT: Separa el contenido de el borde Derecho.  
+    padding-bottom: 20px;  Atributo PADDING-BOTTOM: Separa el contenido de el borde de Abajo. 
+    padding-left: 20px;  Atributo PADDING-LEFT: Separa el contenido de el borde Izquierdo. 
+    padding: 10px 50px;   Esta otra manera de 2 valores, define en vertical y en horizontal. En Vertical separa el borde de arriba y el de abajo del contenido, en Horizontal separa el borde Derecho e Izquierdo del contenido. */
+}
+
+.formulario_input {
+    padding: 10px; /* Atributo PADDING: Separa el contenido de los bordes. */
+    width: 90%;
+    background: white;
+    color: red;
+}
+
+.formulario_submit {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background: black;
+    color: red;
+    width: 50%;
+}

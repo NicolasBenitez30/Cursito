@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+.box {
+    background: red;
+    height: 150px;
+    width: 150px;
+    margin: 50px;
+}
+
+.box1 {
+    background: red;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.box2 {
+    background: red;
+    height: 150px;
+    width: 150px;
+    margin: 30px; /* Efecto del Margin Colaps: Se queda con el margen mas grande que separa objetos hermanos, Es decir que la separacion total no se suma los margin que tiene cada objeto, se utiliza el mas grande (margin) para el margen total. */
+}
