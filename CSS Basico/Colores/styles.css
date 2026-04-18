@@ -1,10 +1,16 @@
 body {
     margin: 0;
+    background: #000;
 }
 
 .box {
-    width: 100px;
-    height: 100px;
-    background: red;
+    padding: 20px 40px;
+    background: #709; /* Valores de colores: # (Hexadecimal), RGB (Red, Green, Blue) y HSL (Tono, Saturacion y Luminocidad). Usar cualquiera, pero bueno Hexa es un poco mas rapido de codificar. En Hexa se suele usar #FFFFFF (6 valores) que se separa en 3 partes #RRGGBB RR: Rojo, GG: Verde y BB: Azul, El primer valor de cada uno define los 16 colores que tiene y el segundo valor define las 16 tonalidades que tiene. */
     margin: 20px;
+    margin-left: 80px;
+    text-align: center;
+    border-top: 2px solid #7d9;
+    color: #7d9;
+    font-family: sans-serif;
+    font-weight: 700;
 }
