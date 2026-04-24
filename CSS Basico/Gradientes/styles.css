@@ -1,0 +1,59 @@
+body {
+    background-color: #f00;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box {
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(transparent, #000c); /* VALOR LINEAR GRADIENT: hace un Gradiente de los colores seleccionados, que pueden ser mas de 2 y tambien se puede asignar el valor transparente. Tambien se puede elegir la direccion en la que inicia, por defecto viene con to-bottom, pero tambien estan to-left, to-right y to-top. Tambien al lado del color podes poner un % del tamaño en el cual va a estar el color y ahi inicia el gradiente. */
+    margin: 0;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+}
+
+img {
+  width: 300px;
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.box1 {
+    width: 300px;
+    height: 400px;
+    background: radial-gradient(#fff, #000); /* VALOR RADIAL-GRADIENT: El Gradiante va deL CENTRO hacia los LADOS, el box es un ejemplo en el cual se puede utilizar. Otro ej: En los videojuegos cuando alguien esta muy herido o moribundo */
+    margin: 0;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 100px;
+    border-top: 6px solid #fff5;
+}
+
+.box2 {
+    width: 300px;
+    height: 400px;
+    background: conic-gradient(#fff, #000); /* VALOR CONIC-GRADIENT: El Gradiante va desde el centro arriba, hacia el mismo lugar en sentido reloj. Este es un ejemplo que se me ocurrio de simular una pared o algo asi. */
+    margin: 0;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 100px;
+    border-top: 10px solid #b00;
+}
+
+.scarface {
+  margin-left: 50px;
+  width: 190px;
+  height: 190px;
+  background-image: url("https://www.ambiance-sticker.com/al_copyrighter.php?image=images/Image/stickers-scarface-ambiance-sticker-ros-scarface.png&sens=25&color=28&forcew=310&forceh=310"); /* Me falto la descripcion de la foto si no se ve la imagen. */
+    background-size: contain;
+  background-position: 38px 2px;
+  background-repeat: no-repeat;
+}

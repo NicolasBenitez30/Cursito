@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #444;
+}
+
+.box {
+    width: 300px;
+    /* height: 324px; Normalmente no se le pone un Alto porque se adapta a lo que agregues. */
+    background: #e2e2e2;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0px 0px 40px 0px #0007; /* ATRIBUTO BOX-SHADOW: Le da sombra a una caja para hacerlo ver mas realismo. Valores: Primer Valor: cuantos pixeles se corre la sombra horizontal. Segundo Valor: cuantos pixeles se corre vertical. Tercer Valor: cuantos pixeles queres que se desenfoque (como un difuminado). Cuarto Valor: Cuanto queres que la sombra se expanda (en pixeles). Quinto Valor: El Color. EN Resumen: HORIZONTAL VERTICAL DIFUMINADO EXPOSICION COLOR. */
+    padding: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+p {
+    list-style: none;
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 13px;
+    text-shadow: 0 0 5px #f98;
+}
+
+h2 {
+    text-shadow: 0 0 12px #f98;
+    font-size: 20px;
+}
+
+img {
+    width: 160px;
+    border-radius: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 40px 0px #0007;
+}
+
+.img2 {
+    width: 160;
+    filter: drop-shadow(0px 0px 3px #0007);
+    border-radius: 0;
+    margin: 0;
+}
