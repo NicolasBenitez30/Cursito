@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Text Area</title>
+</head>
+<body>
+    <form>
+        <h2>Formulario de Contacto</h2>
+        <fieldset>
+            <legend>INFORMACION BASICA</legend>
+            <div class="form_input">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" placeholder="Jose Evaristo de las Bermudas" id="nombre">
+            </div>
+            <div class="form_input">
+                <label for="email">Correo Electronico</label>
+                <input type="email" placeholder="jose.e.d.l.bermudas@gmail.com" id="email">
+            </div>
+            <div class="form_input">
+                <label for="asunto">Asunto</label>
+                <input type="text" placeholder="El asunto de tu mensaje" id="asunto">
+            </div>
+        </fieldset>
+            <div class="form_input">
+            <label for="">Tipo de Usuario
+                <select name="type-of-user" id=""> <!-- SELECT: Menu que se despliega con Opciones. -->
+                    <option value="user1">Seguidor/a</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Empleado/a</option>
+                    <option value="user4">Otros</option>
+                </select>
+            </label>
+        </div>
+        <div class="form_input">
+            <label for="">Referente
+                <input list="referente">
+                <datalist name="type-of-ref" id="referente"> <!-- DATALIST: Parecido al select, solo que las opciones te aparecen al escribir -->
+                    <option>Soy Dalto</option>
+                    <option>Empresa</option>
+                    <option>Amigo/a</option>
+                    <option>Otros</option>
+                </datalist>
+            </label>
+        </div>
+        <div class="form_input">
+            <label>Mensaje
+                <textarea rows="8" placeholder="Deja tu comentario"></textarea> <!-- Otra manera de enlazar el Label y el input. -->
+            </label>
+        </div>
+        <div class="form_input">
+            <label>Acepto <a href="terms.html" target="_blank">Terminos y Condiciones.</a>
+                <input type="checkbox" class="checkbox">
+            </label>
+        </div>
+    </form>
+</body>
+</html>

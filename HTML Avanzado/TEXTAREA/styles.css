@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #eee;
+    background: #222;
+}
+
+form {
+    background-color: transparent;
+    padding: 20px 0px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 55px #fff2;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.form_input {
+    padding: 6px 20px;
+
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: 1px solid #666;
+    box-shadow: 0px 0px 15px #0001;
+    background-color: transparent;
+    color: #eee;
+}
+
+textarea {
+    resize: none; /* Atributo RESIZE: Configura la resolucion segun el valor que tenga, Para que no arruine el Layout que estemos haciendo o utilizando. Valor BOTH: Hace que se reinicie el tamaño al predeterminado. Valor VERTICAL: Modifica el tamaño en vertical (hacia abajo o hacia arriba). HORIZONTAL: Modifica su Tamaño en Horizontal. NONE: Mantiene el tamaño asignado. */
+    min-width: 100%;
+    font-family: sans-serif; /* Como el "texarea" trea su propia tipografia le tenemos que asignar una desde adentro para que cambie. */
+}
