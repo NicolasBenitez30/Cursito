@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tablas</title>
+</head>
+<body>
+    <table> <!--Etiqueta Tabla basicamente. Objetivo de uso: Mostrar datos tabulares.-->
+        <tr>
+            <th class="encabezados_tabla">Nombre</th> <!--Encabezados-->
+            <th class="encabezados_tabla">Apellido</th>
+            <th class="encabezados_tabla">Trabajo</th>
+        </tr>
+        <tr> <!--Fila-->
+            <td>Nicolas</td> <!--Columna-->
+            <td>Benitez</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Lionel</td>
+            <td>Messi</td>
+            <td>Futbolista</td>
+        </tr>
+        <tr>
+            <td>Javier</td>
+            <td>Milei</td>
+            <td>Presidente</td>
+        </tr>
+    </table>
+    <table>
+        <thead> <!--Cabeza de la tabla-->
+            <tr>
+                <th class="encabezados_tabla">Producto</th>
+                <th class="encabezados_tabla">Unidades</th>
+                <th class="encabezados_tabla">Precio</th>
+            </tr>
+        </thead>
+        <tbody> <!--Cuerpo de la tabla-->
+                <tr>
+                    <td>PAPA</td>
+                    <td>1 KG</td>
+                    <td>$3</td>
+                </tr>
+                <tr>
+                    <td>BANANA</td>
+                <td>2 kg</td>
+                <td>$5</td>
+            </tr>
+            <tr>
+                <td>TOMATE CHERRY</td>
+                <td>500 GR</td>
+                <td>$2</td>
+            </tr>
+        </tbody>
+        <tfoot> <!--Pie de la tabla-->
+            <tr>
+                <th class="pies_tabla" colspan="2">Total</th>
+                <td class="pies_tabla">$10</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
