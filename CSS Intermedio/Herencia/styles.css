@@ -1,0 +1,28 @@
+body {
+    color: brown;
+    font-family: sans-serif;
+}
+
+div {
+    color: green;
+}
+
+h1 {
+    color: inherit; /* Hereda el color del padre, si no tiene, escala al siguiente */
+}
+
+p {
+    color: blue;
+}
+
+h2 {
+    color: initial; /* Busca el valor inicial y lo restablece */
+}
+
+h3{
+    color: unset; /* Si el valor por defecto era INHERIT lo vuelve a INHERIT, pero si por defecto era otro lo deja en INITIAL. */
+}
+
+h4 {
+    color: revert; /* es parecido a UNSET, pero primero trata de buscar el estilo del usuario (si el usuario tiene un plugin/extension/lo modifica), si definio su estilo lo revierte a ese, si no lo vuelve INHERIT */
+}

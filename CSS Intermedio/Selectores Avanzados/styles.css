@@ -1,0 +1,35 @@
+img {
+    width: 300px;
+}
+/* SELECTOR DE ATRIBUTO */
+img[src="64x64-PNG-HD.png"] /* Dar Estilo a una imagen exacta  */ {
+    width: 100%;
+}
+
+img[src$=".jpg"] /* Dar Estilo a todas las imagenes .png */ {
+    border: 2px solid #f45;
+}
+
+img[src^="enzo"] /* Dar Estilo a imagenes que comiencen con River */ {
+    border-radius: 50%;
+}
+/* SELECCION DESCENDIENTE */
+ul li /* Dar Estilo a LI que esta dentro de UL */ {
+    color: #045;
+}
+/* SELECTOR POR HIJO DIRECTO */
+li > strong /* Dar Estilo a un Hijo Directo ">" */ {
+    color: #f00;
+}
+/* SELECTOR DE HERMANO ADYACENTE */
+h1 + p {
+    color: #00f;
+}
+/* SELECTOR DE HERMANOS GENERALES */
+h2 ~ p {
+    color: #0f0
+}
+
+h1, h2 {
+    color: #888;
+}

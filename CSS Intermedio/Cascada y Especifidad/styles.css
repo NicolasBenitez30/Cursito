@@ -1,0 +1,16 @@
+/* PRIMERA ESPECIFIDAD */
+#titulo {
+    color: green;
+}
+/* SEGUNDA ESPECIFIDAD */
+.titulo {
+        color: red;
+}    
+/* TERCERA ESPECIFIDAD */  
+h1 {
+    color: blue;    
+}
+/*  El padre de todo !Important */
+h1 {
+    color: #f2f !important
+}
