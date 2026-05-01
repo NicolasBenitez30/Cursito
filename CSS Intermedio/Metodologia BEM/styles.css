@@ -1,0 +1,23 @@
+/* CLASE LISTA */
+.lista {
+    border: 2px solid #000;
+}
+/* CLASE ITEM DE LA LISTA */
+.lista__item {
+    color: grey;
+    margin: 10px 0;
+    list-style: square;
+}
+/* CLASE ITEM MODIFICADOR */
+.item--importante {
+    color: purple;
+}
+/* CLASE ITEM MODIFICADOR */
+.item--danino {
+    color: red;
+}
+/* CLASE LISTA MODIFICADOR */
+.lista--vieja {
+    opacity: 0.5;
+    background-color: #ddd;
+}
