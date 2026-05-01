@@ -1,0 +1,45 @@
+section .elemento1,
+section .elemento2,
+section .elemento3 {
+    color: red;
+}
+/* IS simplifica el codigo de arriba y ademas cambia el estilo por especifidad */
+section :is(.elemento1, .elemento2, .elemento3) {
+    color: blue;
+}
+/* WHERE no cambia el estilo debido a la especifidad */
+section :where(.elemento1, .elemento2, .elemento3) {
+    color: green
+}
+/* Verifica que el elemento padre tenga un .elemento1 entonces cambia el estilo, si desaparece .elemento1 no modifica el estilo */
+section:has(.elemento1) {
+    background-color: #333;
+}
+/* Modifica el DIV que le sigue al UL */
+ul + div {
+    background-color: #eee;
+}
+/* Modificar el UL en caso que le siga un DIV */
+ul:has(+div) {
+    background-color: #666;
+}
+
+div {
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+/* Si el input es valido, le asignamos el color verde al label */
+label:has(input:valid) {
+    color: green;
+}
+/* Si el INPUT es INVALID, le asignamos el color rojo al label */
+label:has(input:invalid){
+    color: red;
+}
+/* El INPUT hereda el color de su padre, en este caso el LABEL. Si LABEL no tuviera asignado un color escala mas arriba, al abuelo y asi sucesivamente */
+input {
+    color: inherit;
+}

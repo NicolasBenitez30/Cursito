@@ -1,0 +1,39 @@
+div {
+    padding: 20px;
+}
+/* Le damos estilo a la primera letra del H1 con este pseudo elemento */
+h1::first-letter {
+    color: red;
+    font-size: 3em;
+    letter-spacing: -8px;
+}
+/* le damos estilo a la primera linea del DIV con este */
+div::first-line {
+    color: red;
+    font-weight: bold;
+}
+/* le damos estilo cuando seleccionamos el div */
+div::selection {
+    background-color: blue;
+}
+/* le damos estilo al placeholder del input */
+input::placeholder {
+    color: #f66;
+    font-family: sans-serif;
+    background-color: #022;
+    padding: 20px;   
+}
+/* cambiamos de color al icono de LI */
+li::marker {
+    color: red;
+}
+
+li::before {
+    content: 'Antes ';
+    color: red;
+}
+
+li::after {
+    content: ' Despues';
+    color: green;
+}
