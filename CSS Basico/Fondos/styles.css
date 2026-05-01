@@ -1,0 +1,60 @@
+body {
+    background-color: #48b;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #0007;
+    background-image: url("https://www.fifarosters.com/assets/players/fifa23/dynamic/100910386.png");
+    background-size: 400px;
+    background-position: -135px 15px;
+    border-radius: 50%;
+}
+
+.box1 {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    background-color: #0007;
+    background-image: url("https://media.tycsports.com/files/2023/04/24/560022/francescoli-debut-river_862x485.webp?v=4");
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.box2 {
+    width: 100%;
+    height: 100px;
+    margin: 20px;
+    margin: 0;
+    background-image: url("https://instagram.fush1-1.fna.fbcdn.net/v/t39.30808-6/652582444_1479670546857075_417072305152002613_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=Mzg1MzA4NjA0ODQ4NjUwOTAwNQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=5B8wYz2NER0Q7kNvwH6_6i8&_nc_oc=AdoMg0jsBIj-FFYMC50e62IgxIy7Zc7EEXQDTmA3-pGSNGzbOO7yemJ3-chdU6ieUwA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fush1-1.fna&_nc_gid=yiJKcN-gGSAnUVUBHzNNww&_nc_ss=7a22e&oh=00_Af3TceOM8HalpuIK1ylOHWmV1VE3eEUoafwXq5QHLqjZrQ&oe=69F05B22");
+    background-color: #000;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.opaco {
+    width: 100%;
+    height: 100%;
+    background-color: #0007;
+}
+
+h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+.box3 {
+    width: 100%;
+    height: 200px;
+    margin: 20px;
+    margin: 0;
+    background: url("https://www.mktesportivo.com/wp-content/uploads/2026/01/Monumental-River.jpg") top / cover fixed #a00;
+}
