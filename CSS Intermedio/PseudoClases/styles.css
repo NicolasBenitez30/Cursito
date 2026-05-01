@@ -1,0 +1,72 @@
+h1 {
+    color: #367;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+h1:hover /* Cuando el Mouse esta sobre este elemento se muestra este estado. */ {
+    background-color: #ccc;
+    color: #000;
+}
+h1:active /* Cuando damos click en el elemento activa este estado */ {
+    background-color: #999;
+    color: #fff;
+}
+/* Modifica el primer elemento FIRST-CHILD */
+li:first-child {
+    color: #f00;
+}
+/* Modifica el ultimo elemento LAST-CHILD  */
+li:last-child {
+    color: #00f;
+}
+/* si queremos Modificar un elemento que no sea el primero o el utlimo usamos NTH-CHILD */
+li:nth-child(2) {
+    color: #0f0;
+}
+/* Modifica cada 2 elemento un tercero */
+li:nth-child(3n) {
+    color: #3ad;
+    background-color: #000;
+    padding: 0;
+}
+/* Selecciona al segundo Li considerando que hay un span lo saltea y busca elementos li, si lo hariamos con LI:NTH-CHILD no sucederia esto */
+li:nth-of-type(5) {
+    color: #fff;
+}
+/* Selecciona los LI que estan en la clase lista pero excluyendo el elemento LI con la clase excluir */
+.lista li:not(.excluir) {
+    color: #0ff;
+}
+
+div {
+    border: 2px solid #000;
+}
+/* Seleccionamos el div en caso de estar vacio. EMPTY */
+div:empty {
+    border: none;
+}
+
+input[type="checkbox"] {
+    margin: 50px;
+}
+/* Selecciona un elemento chequeado */
+input[type="checkbox"]:checked {
+    margin: 0;
+}
+/* ENLACES VISITADOS */
+a:visited {
+    color: #f21;   
+}
+/* SELECIONANDO ENLACES NO VISITADOS */
+a:link {
+    color: #0f1;
+}
+/* INPUT INVALIDO */
+input:invalid {
+    color: #f00;
+}
+/* INPUT VALIDO */
+input:valid {
+    color: #0f0;
+}
