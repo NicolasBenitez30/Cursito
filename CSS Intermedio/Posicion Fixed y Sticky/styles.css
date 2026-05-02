@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.contenedor {
+    padding: 100px;
+    background-color: blue;
+    position: relative;
+}
+
+h2 {
+    padding: 1px 8px;
+    font-size: 18px;
+    margin: 0;
+}
+
+p {
+    padding-left: 5px;
+    font-size: 14px;
+    margin: 0;
+}
+
+.box {
+    background-color: #f00;
+    height: 60px;
+    width: 200px;
+    position: fixed; /* Se queda fijo y no le importa nada mas. */
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-right: 0;
+    box-shadow: 0px 0px 40px #0009;
+}
+
+.box-fixed {
+    background-color: #f00;
+    height: 60px;
+    width: 200px;
+    position: sticky; /* Se comporta relative hasta estar a cierta distancia del top que se vuelve fixed. */
+    top: 95px;
+    box-sizing: border-box;
+}
+
+.first {
+    top: 30px;
+}
+
+.last {
+    top: 160px;
+}
+
+.last2 {
+    top: 225px;
+}
