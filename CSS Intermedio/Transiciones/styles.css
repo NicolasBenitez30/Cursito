@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    transition-property: color;
+    transition-duration: 1s;
+    color: #f00;
+}
+
+.box:hover {
+    color: #fff;
+}
+
+.box2 {
+    width: 120px;
+    height: 120px;
+    background-color: #f00;
+    margin-top: 50px;
+    transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0,.86,.73,1);
+    position: relative;
+    left: 0;
+}
+
+body:hover .box2 {
+    left: 600px;
+}
+
+.box3 {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    background-color: #f00;
+    transition: left 1s cubic-bezier(.54,.01,.74,1) 2s; /* TRANSITION: es un shorthand, alberga 4 propiedades, TRANSITION-PROPERTY, TRANSITION-DURATION, TRANSITION-TIMING-FUNCTION y TRANSITION-DELAY */
+    position: relative;
+    left: 0;
+}
+body:hover .box3 {
+    left: 800px;
+}
