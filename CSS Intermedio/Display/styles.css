@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div {
+    padding: 20px;
+    background-color: #999;
+}
+
+.link--block {
+    background-color: red;
+    color: #fff;
+    display: block; /* BLOCK: Le estamos diciendo que ocupe todo el ancho disponible. Si utilizamos Margin y Padding sin el DISPLAY BLOCK se rompe todo, no lo aceptan y no respetan los limites */
+    border: 1px solid #000;
+    margin: 20px;
+    padding: 20px;
+}
+
+p {
+    background-color: #000;
+    color: #fff;
+    display: inline;
+    margin: 5px; /* El padding y el margin solo es horizontal. No le importa el tamaNo, el widht y el height, se adapta a lo que escribamos. */
+}
+
+.nav {
+    background-color: #48e;
+}
+
+.nav__list {
+    margin: 0;
+    text-align: center;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block; /* Se puede modificar el tamano, con inline no se puede. */
+    padding: 10px;
+    background-color: #48e;
+}
+
+.nav__link:hover {
+    background-color: #59f;
+}
+
+.link--button {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 4px 18px;
+    color: #48e;
+    border-radius: 3px;
+    margin-left: 120px;
+}
+
+.link--button:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.link--none {
+    display: none; /* no ocupa espacio y Desaparece a la vista, hace como si no existiera */
+}
