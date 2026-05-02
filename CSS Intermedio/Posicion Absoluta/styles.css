@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #ccc;
+}
+
+.contenedor {
+    border: 2px solid #000;
+    margin: 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    background-color: #ca6;
+    color: #fff;
+    height: 100px;
+}
+
+.box--blue {
+    background-color: #48e;
+    position: absolute; /* ABSOLUTE: Las posiciones en las que se va a mover no son en si misma, son relativas. Si no hay un elemento (padre/abuelo/jerarquia superior/etc...) relativo se va a posicionar sobre el HTML. Pierde el espacio naturalmente y se posiona en un elemento relativo. */
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto; /* se centra */
+}
+
+.box--red {
+    background-color: #f64;
+    position: relative; /* RELATIVE: Reserva su espacio en el navegador, se mueve a partir de su propio top, right, left y bottom, y a demas crea un contexto en el que podemos verlo hacia atras o adelante en el eje Z index */
+
+}

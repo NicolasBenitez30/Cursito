@@ -9,7 +9,14 @@
 
 .box--blue {
     background-color: blue;
-    top: -20px; /* posicion le da prioridad a TOP y a LEFT, si BOTTOM tiene valor pero esa TOP definido, le va a dar importancia a TOP sobre BOTTOM no importa que tenga !important Prioridad TOP, lo mismo pasa con RIGHT y LEFT. */
-    left: 30px;
+    top: 70px; /* posicion le da prioridad a TOP y a LEFT, si BOTTOM tiene valor pero esa TOP definido, le va a dar importancia a TOP sobre BOTTOM no importa que tenga !important Prioridad TOP, lo mismo pasa con RIGHT y LEFT. */
+    left: 20px;
     z-index: 20;
+}
+
+.box:first-child {
+    background-color: red;
+    z-index: 30;
+    top: 150px;
+    left: 40px;
 }
