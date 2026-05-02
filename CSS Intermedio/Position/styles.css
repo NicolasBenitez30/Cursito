@@ -1,0 +1,15 @@
+.box {
+    width: 100px;
+    background-color: #f50;
+    color: #fff;
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+
+.box--blue {
+    background-color: blue;
+    top: -20px; /* posicion le da prioridad a TOP y a LEFT, si BOTTOM tiene valor pero esa TOP definido, le va a dar importancia a TOP sobre BOTTOM no importa que tenga !important Prioridad TOP, lo mismo pasa con RIGHT y LEFT. */
+    left: 30px;
+    z-index: 20;
+}
