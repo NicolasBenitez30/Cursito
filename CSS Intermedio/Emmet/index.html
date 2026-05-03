@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMMET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Para llamar a una etiqueta y que venga con otra dentro utilizamos > entre etiqueta y etiqueta ( ul>li ). -->
+    <ul>
+        <li></li>
+    </ul>
+    <!-- Para Multiplicar las etiquetas utilizamos * despues de la etiqueta. ( li*3 ) -->
+     <li></li>
+     <li></li>
+     <li></li>
+     <!-- Si hacemos una combinacion de los dos resultados anteriores, quedaria como esto. ( ul>li*4>a ) Dentro de una Lista Desordenada, agregamos 4 items list y que cada uno tenga adentro una etiqueta link.  -->
+    <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+    <!-- Ahora le agregamos una clase a la etiqueta <a> ( ul>li*4>a.link )  -->
+    <ul>
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+        <li><a href="" class="link"></a></li>
+    </ul>
+    <!-- Ahora le vamos a dar clase a los <li> y a los <a> no. ( ul>li.list__item*4>a ). si le ponemos una lista al a tambien se crea, no hay problema. -->
+    <ul>
+        <li class="list__item"><a href=""></a></li>
+        <li class="list__item"><a href=""></a></li>
+        <li class="list__item"><a href=""></a></li>
+        <li class="list__item"><a href=""></a></li>
+    </ul>
+    <!-- Ahora le pones clase a todas las etiquetas. ( ul.list>li.list__item*4>a.item__link )  -->
+    <ul class="list">
+        <li class="list__item"><a href="" class="item__link"></a></li>
+        <li class="list__item"><a href="" class="item__link"></a></li>
+        <li class="list__item"><a href="" class="item__link"></a></li>
+        <li class="list__item"><a href="" class="item__link"></a></li>
+    </ul>
+    <!-- Ahora creamos una estructura semanticamente correcta de HTML con solo una linea de codigo. ( header>nav>ul.list>li.list__item*4>a.item__link ) -->
+    <header>
+        <nav>
+            <ul class="list">
+                <li class="list__item"><a href="" class="item__link"></a></li>
+                <li class="list__item"><a href="" class="item__link"></a></li>
+                <li class="list__item"><a href="" class="item__link"></a></li>
+                <li class="list__item"><a href="" class="item__link"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Misma estructura peor ahora dentro de <a> agregamos un texto que se incrementa ($). ( header>nav>ul.list>li.list__item*4>a.item__link{LINK $} )  -->
+    <header>
+        <nav>
+            <ul class="list">
+                <li class="list__item"><a href="" class="item__link">LINK 1</a></li>
+                <li class="list__item"><a href="" class="item__link">LINK 2</a></li>
+                <li class="list__item"><a href="" class="item__link">LINK 3</a></li>
+                <li class="list__item"><a href="" class="item__link">LINK 4</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
