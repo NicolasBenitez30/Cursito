@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #666;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-content: space-evenly; /* Alinea los elementos en el EJE principal, valor por defecto START. Valores: START, END, CENTER, SPACE-BETWEEN: Pone 1er elemento en el inicio, Ultimo elemento al final y los elementos del medio distribuyen su espacio. SPACE AROUND: Hace que cada elemento tenga una separacion igual. SPACE-EVENLY: Hace que todos los elementos tenga la misma distancia entre estos y ademas de los bordes. */
+    align-items: start; /* La utilizamos cuando tenemos solo una linea en el eje cruzado. Valores: Por defecto STRETCH: estirate para llenar el cross axis. START: solo ocupan el contenido que tienen adentro y lo posiciona al principio. END: los posiciona al final. CENTER: Para que los posicione en el centro. BASELINE: se alinean segun la base del texto. */
+    align-content: start; /* Propiedad para muchas lineas en el eje cruzado. Valores: START, SPACE-AROUND. SPACE-EVENLY, CENTER, END.  */
+}
+
+.flex-item {
+    width: 180px;
+    background-color: #911;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: #f33;
+}

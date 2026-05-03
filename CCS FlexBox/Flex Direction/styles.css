@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.flexbox {
+    display: flex; /* Se pueden encojer pero no agrandar los elementos dentro. */
+    flex-direction: row; /* Valores: ROW, ROW-REVERSE, COLUMN, COLUMN-REVERSE */
+    /* direction: ltr; Propiedad DIRECTION, Valores LTR: LEFT TO RIGHT y RTL: RIGHT TO LEFT. */
+}
+
+.flex-item {
+    width: 150px;
+    background-color: #911;
+    margin: 10px;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.flex-item:first-child {
+    background-color: #f77;
+}
+
+.flex-item:last-child {
+    background-color: #f33;
+}
