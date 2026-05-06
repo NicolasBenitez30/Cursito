@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #666;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px;
+    align-items: center;
+    border: 2px solid #000;
+    gap: 10px;
+}
+
+.flex-item {
+    background-color: #911;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    flex: 1 2 100px ; /* Esta Propiedad simplifica los otras tres. Como Primer valor va FLEX-GROW, el segundo FLEX-SHRINK y el Tercero FLEX-BASIS. las tres propiedades o esta que simplifica, va al HIJO, NO al PADRE. (hijo flex-item, padre flexbox) */
+    /* flex-grow: 1; con esta propiedad definimos que espacio ocupa el objeto en este caso 1 parte */
+    /* flex-shrink: 1; Esta propiedad define cuanto se va achicar el objeto cuando bajamos la resolucion*/
+    /* flex-basis: 150px; Esta Propiedad es como un min-height o min-width a la vez cuando cambias flex flow de Row a Column. Recomiendan usar un FLEX-BASIS: 0 y tambien algun MIN-WIDTH de algo. */
+}
+
+.flex-item:nth-child(2n){
+    background-color: #f77;
+    /* flex-grow: 2; este en 2 partes. crece el doble */
+    /* flex-shrink: 0; Cuando el valor es 0 no se achica. pero si llega al borde puede sobresalir de la caja visualmente. */
+}
+
+.flex-item:last-child {
+    background-color: #f77;
+    /* flex-grow: 5; y este en 5 partes de en total 8. crece 5 veces*/
+}
