@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #104;
+    color: #fff;
+}
+
+header, div, nav, ul, h1, h2, p {
+    box-sizing: border-box;
+}
+/* --- HEADER SECTION --- */
+.header {
+   height: 100vh;
+   box-sizing: border-box;
+   background-image: url(https://media.gq.com.mx/photos/69a1bfa5e01d346af412396f/16:9/w_2560%2Cc_limit/Champions_League_2026_Octavos_2263300233.jpg);
+   background-size: cover;
+   background-position: center;
+   display: flex;
+}
+
+.header__overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: #1046;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__item-conteiner {
+    position: relative;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    max-width: 700px;
+}
+
+.header__item-conteiner p {
+    text-wrap: pretty;
+}
+
+.header__img {
+    min-width: 250px;
+    max-width: 40%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 60px;
+    text-wrap: balance;
+}
+
+/* --- NAVBAR SECTION --- */
+.nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 100px 6px 40px;
+}
+
+.nav__ul {
+    margin: 0;
+    display: flex;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+.nav__link {
+    color: #104;
+    text-decoration: none;
+    display: inline-block;   
+    padding: 10px;
+    margin: 6px;
+}
+
+.nav__logo {
+    width: 40px;
+
+}
