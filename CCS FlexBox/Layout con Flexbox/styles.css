@@ -11,23 +11,24 @@ header, div, nav, ul, h1, h2, p {
 }
 /* --- HEADER SECTION --- */
 .header {
-   height: 100vh;
+   min-height: 100vh;
    box-sizing: border-box;
    background-image: url(https://media.gq.com.mx/photos/69a1bfa5e01d346af412396f/16:9/w_2560%2Cc_limit/Champions_League_2026_Octavos_2263300233.jpg);
    background-size: cover;
    background-position: center;
    display: flex;
+   position: relative;
 }
 
 .header__overlay {
-    height: 100vh;
+    min-height: 100vh; /* NO DAR HEIGHT FIJO, NO ES UNA BUENA PRACTICA, NO ES RECOMENDABLE. porque cuando se adapta a otro dispositivo se rompe todo. */
     width: 100%;
     background-color: #1046;
     position: absolute;
     z-index: 1;
 }
 
-.header__item-conteiner {
+.header__item-container {
     position: relative;
     z-index: 10;
     margin: auto;
@@ -35,7 +36,7 @@ header, div, nav, ul, h1, h2, p {
     max-width: 700px;
 }
 
-.header__item-conteiner p {
+.header__item-container p {
     text-wrap: pretty;
 }
 
@@ -43,7 +44,8 @@ header, div, nav, ul, h1, h2, p {
     min-width: 250px;
     max-width: 40%;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 6px solid #fff;
+    margin: 20px;
 }
 
 h1 {
@@ -56,28 +58,78 @@ h1 {
 .nav {
     background-color: #fff;
     display: flex;
-    justify-content: space-between;
-    padding: 6px 100px 6px 40px;
+    flex-wrap: wrap; /* para que se adapte a dispositivos moviles */
+    justify-content: center;
+    padding: 6px 20px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 0 25px #1046;
 }
 
 .nav__ul {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
 }
 
 .nav__item {
     list-style: none;
 }
 
+.nav__ul-container {
+    flex-grow: 4;
+    text-align: center;
+}
+
+.nav__logo-container{
+    flex-grow: 1;
+    text-align: center;
+}
+
 .nav__link {
     color: #104;
     text-decoration: none;
     display: inline-block;   
-    padding: 10px;
-    margin: 6px;
+    padding: 8px 10px;
+    border-radius: 0;
+    transition: backgroun-color 0.24s, border-radius 0.2s, outline 0.3s, outline-offset 0.3s;
+    margin: 2px;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.nav__link:hover {
+    background-color: #1043;
+    border-radius: 20px;
+    outline: 2px solid #1046;
+    outline-offset: -5px;
+}
+
+.link--login {
+    background-color: #104;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 24px;
+    margin-left: 6px;
+}
+
+.link--login:hover {
+    background-color: #1049;
+    outline: none;
 }
 
 .nav__logo {
-    width: 40px;
+    width: 60px;
+}
 
+/* --- MAIN SECTION --- */
+
+main {
+    max-width: 800px;
+    margin: auto;
+    font-size: 30px;
+    text-wrap: pretty;
 }
