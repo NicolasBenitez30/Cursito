@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture, Source y Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <picture> <!-- Definimos una especie de contexto donde todo lo que este adentro van a ser fuentes para que vos las elijas y determinas cual vas a mostrar  -->
+        <source media="(max-width: 400px)" srcset="G-360x360.jpg">
+        <source media="(max-width: 600px)" srcset="G-600x600.png">
+        <img src="G-900x900.jpg" alt="">
+    </picture>
+</body>
+</html>
