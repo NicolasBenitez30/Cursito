@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srcset y Sizes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="G-360x360.jpg" alt=""
+    srcset="G-360x360.jpg 400w, G-600x600.png 600w, G-900x900.jpg 1000w"
+    sizes="(max-width: 400px) 300px, (max-width: 600px) 500px, 900px"
+    > <!-- SRCSET utilizado para segun la dimension de la pantalla o el width, escalar entre imagenes como consejo agregando la dimension en la que saldrian en pantalla, ej: img res moviles, img res tablet, img res monitor, como esta arriba por ej.
+    SIZES: Definimos la dimension de la pantalla en el que puede salir una imagen y le agregamos otra condicion por si la dimension de la pantalla es mal alta y una imagen con mas resolucion. -->
+</body>
+</html>
