@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.flex-item {
+    padding: 30px;
+    background-color: #ccc;
+    border: 1px solid #f00;
+    flex-grow: 1;
+}
+
+@media print { /* Le estoy diciendo que cuando se imprima lo que este en el body tenga un tamano de fuente de 150pt, solo en ese caso */
+    body {
+        font-size: 150pt;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flexbox{
+        flex-direction: column;
+    }
+}
