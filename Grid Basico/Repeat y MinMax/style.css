@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, minmax(100px, 300px)) 1fr;  /* repeat(4, 1fr) Utilizado para no poner muchas veces la misma expresion, en este caso 4 veces se repite 1FR. Para repetir un patron y no poner 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr, pones que el patron 1fr 2fr se repita 4 veces repeat(4, 1fr 2fr); Funciona con cualquier medida. */
+    grid-template-rows: repeat(2, 200px) 1fr;
+}
+
+.grid-item {
+    background-color: #48e;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
