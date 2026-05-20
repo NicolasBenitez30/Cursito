@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-flow: dense; /* este valor, no respeta el orden pero si rellena los lugares vacios con los elementos que le siguen */
+    margin: auto;
+    gap: 10px;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.grid-item {
+   background-color: #483;
+   color: #fff;
+   font-size: 30px;
+   border-radius: 16px;
+   background-image: url("https://i.ytimg.com/vi/2z0gVZViNz0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXz6PUR8lR6g2qTvfpq00ZSqAHVw");
+   background-size: cover;
+   background-position: center;
+}
+
+.grid-item:nth-child(10){
+    grid-column: span 3;
+    grid-row: span 3;
+}
