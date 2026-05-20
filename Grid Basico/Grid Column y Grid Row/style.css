@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    margin: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #48e;
+    font-size: 30px;
+    max-width: 100%;
+    border-radius: 16px;    
+}
+
+.grid-item:first-child {
+    /* grid-column-start: 2; /* Es importante que usemos el elemento div para estas 4 propiedades asi no se rompe 
+    grid-row-start: 3;
+    grid-column-end: span 3;
+    grid-row-end: span 3; /* Se expande 3, esta bueno a la hora de posicionar la imagen en otro lado, start column 4 y start row 2 con esas cordenadas se expande 3 hacia cada lado. (es un ejemplo) */
+    grid-column: 2/span 3; /* Esta propiedad resume las dos de column, lo mismo la propiedad de abajo con las dos de row */
+    grid-row: 3/span 3;
+    background-image: url("https://i.ytimg.com/vi/2z0gVZViNz0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAXz6PUR8lR6g2qTvfpq00ZSqAHVw");
+    background-size: cover;
+}
+
+.grid-item:hover {
+    opacity: 0.74;
+}
