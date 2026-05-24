@@ -1,0 +1,60 @@
+/* Asi definimos Transiciones */
+/* @keyframes nombre { 
+    from { /* Todas las Propiedades cuando inicia la Transicion
+        opacity: 0;
+    }    
+    to { /* Todas las Propiedades cuando termina la Transicion 
+        opacity: 1;
+    } 
+} /* Se puede reemplazar from y to por %. tambien podemos agregar una transicion en el medio ej: 50%.  */
+
+/*  ------ CODIGO REUTILIZADO ------     */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.box {
+    margin: 20px;
+    background-color: #fff;
+    border: 4px solid #48e;
+    padding: 6px;
+    border-radius: 39px;
+}
+
+.barra {
+    padding: 40px;
+    background-color: #48e;
+    border-radius: 30px;
+    width: 10%;
+    animation-name: llenar-barra; /* Propiedad para traer la animacion a esta clase.  */
+    animation-duration: 2s; /* Cuanto tarda en iniciar la animacion, tambien se pueden poner valores negativos ej -2, cuando entres a la pagina hace 2 segundos se inicio. */
+    animation-fill-mode: both;
+    animation-timing-function: linear; /* Valor LINEAR: Le estamos diciendo a la animacion que no inicie ni mas rapido ni termine mas lento, se matiene igual. */
+    animation-iteration-count: infinite; /* Esta Propiedad define cuantas veces la repetimos. */
+    animation-direction: alternate; /* Valor ALTERNATE: Inicia normal cuando termina Inicia en Reversa, basicamente alterna cada vez que inicia. */ 
+}
+
+.barra:active {
+    animation-play-state: paused; /* Le definimos el estado. Le estamos diciendo cuando estas activo/click se Pause. Valor PAUSED: la animacion cambia a estado en pausa. */
+}
+
+
+/*  ------ ANIMACION ------     */
+
+@keyframes llenar-barra {
+    from {
+        width: 0%;
+        background-color: #f33;
+    }
+    to {
+        width: 100%;
+        background-color: #f33;
+    }
+}
