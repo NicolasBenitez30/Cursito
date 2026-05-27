@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrando Animaciones en una WEB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="https://es.logodownload.org/wp-content/uploads/2021/09/argentina-national-football-team-logo-4-11.png" alt="AFA">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <a class="header__nav-item" href="#profile">About Us</a>
+                <a class="header__nav-item" href="#portfolio">Projects</a>
+                <a class="header__nav-item" href="#contact">Contact</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile" id="profile">
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <img class="profile__img" src="https://yt3.ggpht.com/ytc/AIdro_lHnxL3v0VfXsOCjL0WYaewpQ32eXyDzmUZPkJ4YC1PWlc=s176-c-k-c0x00ffffff-no-rj" alt="Nicolas Benitez">
+            </div>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <div class="profile__description">
+                        <h1>¿Quien es Nicolas Benitez?</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perferendis rerum natus quo excepturi consequatur alias obcaecati sit ex dolore! Laudantium tempore temporibus eligendi! Odit consectetur autem iure aut necessitatibus?
+                        </p>
+                    </div>
+                    <div class="profile__skills-container">
+                        <h2>SKILLS</h2>
+                        <ul>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--80">80%</div>
+                                </div>
+                                <span class="profile__skill-name">HTML</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--60">60%</div>
+                                </div>
+                                <span class="profile__skill-name">CSS</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--70">70%</div>
+                                </div>
+                                <span class="profile__skill-name">JS</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--100">100%</div>
+                                </div>
+                                <span class="profile__skill-name">SQL</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">PORTFOLIO SECTION</h2>
+        <div class="portfolio__project-container">
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">1</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">2</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">3</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">4</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">5</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">6</h2>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section>
+        <form class="form" id="contact">
+            <h2>CONTACT</h2>
+            <div class="form__form">
+                <div class="form__input-container">
+                    <label for="">Nombre
+                        <input type="text" placeholder="Jose Evaristo">
+                    </label>
+                </div>
+                <div class="form__input-container">
+                    <label for="">Apellido
+                        <input type="text" placeholder="de las Bermudas">
+                    </label>
+                </div>
+                <div class="form__input-container">
+                    <label for="">E-mail
+                        <input type="mail" placeholder="joseevaristo@mail.com">
+                    </label>
+                </div>
+                <div class="form__input-container">
+                    <label for="">Mensaje
+                        <textarea placeholder="Tu Mensaje"></textarea>
+                    </label>
+                </div>
+                <div class="form__input-container">
+                    <input type="submit">
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <strong>Nicolas Benitez</strong> - Copyright @2028
+    </footer>
+</body>
+</html>
