@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+.box {
+    margin: auto;
+    padding: 20px 50px;
+    backdrop-filter: blur(10px); /* BACKDROP-FILTER: se aplica solamente a los elementos que estan por debajo */
+    position: absolute;
+    width: 100%;
+    top: 560px;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    filter: saturate() drop-shadow(0px 0px 15px #0006); /* Va aplicando filtros de a uno, asi si pones otra funcion al principio o un lugar atras obtenes otras combinaciones.  */
+}
