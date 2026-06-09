@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --tamaño-principal: 2.4rem;
+    --alto-del-box: 100px
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box{
+    font-size: clamp(var(--tamaño-principal),2.2vh,4rem);
+    padding: 0 50px;
+    border: 6px solid #000;
+}
+
+.box:first-child{
+    height: var(--alto-del-box);
+}
+
+.box:nth-child(2) {
+    height: calc(100vh - var(--alto-del-box));
+    overflow: auto;
+}
