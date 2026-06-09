@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    background-color: #48e;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    margin: 120px auto;
+    font-size: clamp(2.4rem,2.2vw,4rem); /* Funcion CLAMP: esta contiene 3 valores, el primero es el MINIMO, el segundo es el IDEAL, y el tercero es el MAXIMO. Esto le dice a la fuente que todo lo menor al minimo mida el MINIMO, cuando supera el minimo mide el valor IDEAL, pero cuando llega al valor MAXIMO o lo supera mide ese valor. esta funcion se puede aplicar para otras propiedades tambien.  */
+    padding: 0 40px;
+    border: 6px solid #000;
+}
