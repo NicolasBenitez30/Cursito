@@ -20,6 +20,7 @@ body {
     background-color: var(--chat-bg-color);
     margin: 50px auto;
     border-radius: 20px;
+    box-shadow: 2px 2px 6px #0003;
 }
 
 .chat__user {
@@ -36,6 +37,8 @@ body {
 
 .chat__content {
     padding: 12px;
+    display: flex;
+    flex-direction: column;
 }
 
 .msg {
@@ -46,6 +49,9 @@ body {
     border-radius: 9px 9px 9px 9px;
     position: relative;
     z-index: 10;
+    max-width: clamp(300px, 70%, 600px);
+    margin: 6px;
+    width: fit-content;
 }
 
 .msg::before {
@@ -54,8 +60,22 @@ body {
     height: 14px;
     width: 14px;
     background-color: var(--bg-color);
-    bottom: 45px;
-    left: 14px;
-    clip-path: polygon(0 0, 50% 100%, 100% 100%);
+    bottom: -7px;
+    left: 7x;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 50%);
     z-index: -1;
+}
+
+.self {
+    background-color: var(--dark-color);
+    margin-left: auto;
+    border-radius: 9px 9px 9px 9px;
+}
+
+.self::before {
+    background-color: var(--dark-color);
+    clip-path: polygon(0% 50%, 100% 100%, 50% 0%);
+    bottom: -7px;
+    left: auto;
+    right: 7px;
 }
