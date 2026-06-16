@@ -22,7 +22,6 @@ body {
 }
 
 header {
-    min-height: 100dvh;
     display: flex;
     justify-content: center;
     mix-blend-mode: hard-light;
@@ -30,7 +29,6 @@ header {
 
 img {
     position: fixed;
-    top: 0;
     animation: aparecer both;
     animation-timeline: scroll();
     max-width: 100vh;
@@ -39,8 +37,6 @@ img {
 .text-container {
     min-height: 100vh;
     position: fixed;
-    top: 0;
-    display: flex;
     font-size: clamp(1rem, 9vw, 12rem);
     color: var(--text-color);
     font-weight: 700;
@@ -51,12 +47,12 @@ img {
     animation: aparecer-texto both;
     animation-timeline: scroll();
     animation-range-start: cover 20%;
+    display:inline-flex;
 }
 
 .left-text {
     color: #f00;
     filter: drop-shadow(0px 0px 1px #f00) drop-shadow(0px 0px 9px #f00);
-    display: flex;
 }
 
 .right-text {
@@ -65,8 +61,14 @@ img {
 }
 
 .social-media img{
-    width: 9rem;
-    color: #fff;
+    width: 8rem;
+    position: relative;
+}
+
+.left-text .social-media, .right-text .social-media {
+    gap: 50px;
+    display:flex;
+    justify-content:center;
 }
 
 /*      ------KEYFRAMES------        */
@@ -94,5 +96,14 @@ img {
         opacity: 1;
         translate: 0 0;
         scale: 1;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .text-container {
+        justify-content:space-evenly;
+    }
+    .social-media img {
+        width: 5rem;
     }
 }
