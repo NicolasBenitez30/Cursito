@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    --bg-color: #FF9464;
+    --text-color: #fff;
+    --dark-color: #f62
+}
+
+body,div,ul,li,a,h1,h2,h3,h4,p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://64.media.tumblr.com/50908ab2dd78b54fa64ee70359d02c6d/tumblr_ngjl47jQ181siwuhjo1_500.gif");
+    height: 200dvh;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    mix-blend-mode: hard-light;
+}
+
+img {
+    position: fixed;
+    top: 0;
+    animation: aparecer both;
+    animation-timeline: scroll();
+    max-width: 100vh;
+}
+
+.text-container {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    font-size: clamp(1rem, 9vw, 12rem);
+    color: var(--text-color);
+    font-weight: 700;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 3vw;
+    animation: aparecer-texto both;
+    animation-timeline: scroll();
+    animation-range-start: cover 20%;
+}
+
+.left-text {
+    color: #f00;
+    filter: drop-shadow(0px 0px 1px #f00) drop-shadow(0px 0px 9px #f00);
+    display: flex;
+}
+
+.right-text {
+    color: var(--text-color);
+    filter: drop-shadow(0px 0px 1px var(--text-color)) drop-shadow(0px 0px 9px var(--text-color));
+}
+
+.social-media img{
+    width: 9rem;
+    color: #fff;
+}
+
+/*      ------KEYFRAMES------        */
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        translate: 0 -20%;
+        scale: .7;
+    }
+    100% {
+        opacity: 100%;
+        translate: 0 0;
+        scale: 1;
+    }
+}
+
+@keyframes aparecer-texto {
+    0% {
+        opacity: 0;
+        translate: 0 20%;
+        scale: 2;
+    }
+    100% {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
+}
